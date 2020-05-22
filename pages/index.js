@@ -1,24 +1,68 @@
-import React from 'react';
-import {Text} from 'react-native';
+import React, {useLayoutEffect} from 'react';
+import {StatusBar, Text} from 'react-native';
+import {List, Modal, Button} from '@ant-design/react-native';
 import {connect, Link} from 'umi';
-import {List} from '@ant-design/react-native';
 
-function IndexPage({greeting, loading}) {
+const Item = List.Item;
+
+function IndexPage({greeting, loading, navigation}) {
+  // 导航条右侧按钮点击事件
+  function onHeaderRightPress() {
+    Modal.alert('Title', 'alert content', [
+      {
+        text: 'Cancel',
+        onPress: () => {
+          console.log('cancel');
+        },
+        style: 'cancel',
+      },
+      {
+        text: 'OK',
+        onPress: () => {
+          console.log('ok');
+        },
+      },
+    ]);
+  }
+
+  useLayoutEffect(() => {
+    // 添加导航条右侧按钮示例
+    navigation.setOptions({
+      headerRight: () => (
+        <Button type="primary" size="small" onPress={onHeaderRightPress}>
+          弹窗
+        </Button>
+      ),
+    });
+  }, [navigation]);
   return (
-    <List renderHeader={() => <Text>{loading ? 'Loading...' : greeting}</Text>}>
-      <Link to="/home?foo=bar" component={List.Item} arrow="horizontal">
-        Go to home
-      </Link>
-      <Link to="/login" component={List.Item} arrow="horizontal">
-        Go to login
-      </Link>
-    </List>
+    <>
+      <StatusBar barStyle="light-content" />
+      <List
+        renderHeader={() => <Text>{loading ? 'Loading...' : greeting}</Text>}>
+        <Link to="/home?foo=bar" component={Item} arrow="horizontal">
+          主页
+        </Link>
+        <Link to="/login" component={Item} arrow="horizontal">
+          登录页
+        </Link>
+      </List>
+    </>
   );
 }
 
-const ConnectedIndexPage = connect(({foo: {greeting}, loading: {effects}}) => ({
-  greeting,
+const ConnectedIndexPage = connect(({foo, loading: {effects}}) => ({
+  greeting: foo.greeting,
   loading: effects['foo/fetch'],
 }))(IndexPage);
+
+ConnectedIndexPage.title = '菜单';
+ConnectedIndexPage.headerTintColor = '#ffffff';
+ConnectedIndexPage.headerTitleStyle = {
+  fontWeight: 'bold',
+};
+ConnectedIndexPage.headerStyle = {
+  backgroundColor: '#000000',
+};
 
 export default ConnectedIndexPage;

@@ -19,4 +19,13 @@ function HomePage({route}) {
   );
 }
 
+HomePage.title = '主页';
+HomePage.headerTintColor = '#000000';
+HomePage.headerTitleStyle = {
+  fontWeight: 'bold',
+};
+HomePage.headerStyle = {
+  backgroundColor: '#ffffff',
+};
+
 export default HomePage;

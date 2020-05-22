@@ -17,4 +17,13 @@ function LoginPage() {
   );
 }
 
+LoginPage.title = '登录';
+LoginPage.headerTintColor = '#000000';
+LoginPage.headerTitleStyle = {
+  fontWeight: 'bold',
+};
+LoginPage.headerStyle = {
+  backgroundColor: '#ffffff',
+};
+
 export default LoginPage;
