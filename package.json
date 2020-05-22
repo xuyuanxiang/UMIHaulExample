@@ -22,6 +22,7 @@
     "@haul-bundler/cli": "^0.22.1",
     "@haul-bundler/preset-0.60": "^0.18.0",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@umijs/plugin-dva": "^0.7.2",
     "babel-jest": "^26.0.1",
     "eslint": "^7.0.0",
     "jest": "^26.0.1",

@@ -1,6 +1,14 @@
 import React from 'react';
 import {Text} from 'react-native';
+import {connect} from 'umi';
 
-export default function IndexPage() {
-  return <Text>Hello, umi!</Text>;
+function IndexPage({greeting, loading}) {
+  return <Text>{loading ? 'Loading...' : greeting}</Text>;
 }
+
+const ConnectedIndexPage = connect(({foo: {greeting}, loading: {effects}}) => ({
+  greeting,
+  loading: effects['foo/fetch'],
+}))(IndexPage);
+
+export default ConnectedIndexPage;
