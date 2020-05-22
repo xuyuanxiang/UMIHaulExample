@@ -116,7 +116,7 @@ yarn add @umijs/plugin-dva --dev
 
 查看变动内容：
 
-- [compare/0.0.1...1.0.0](https://github.com/xuyuanxiang/UMIHaulExample/compare/0.0.1...1.0.0)
+- [compare/0.1.0...1.0.0](https://github.com/xuyuanxiang/UMIHaulExample/compare/0.1.0...1.0.0)
 
 ### 1.1.0-集成 @ant-design/react-native
 
