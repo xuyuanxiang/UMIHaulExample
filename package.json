@@ -12,6 +12,7 @@
     "haul": "haul start"
   },
   "dependencies": {
+    "@ant-design/react-native": "^3.3.0",
     "react": "16.11.0",
     "react-native": "0.62.2"
   },
@@ -29,6 +30,7 @@
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.11.0",
     "umi": "^3.2.2",
+    "umi-plugin-antd-react-native": "^0.3.4",
     "umi-preset-react-native": "^0.3.4"
   },
   "jest": {

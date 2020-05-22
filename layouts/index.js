@@ -1,10 +1,13 @@
 import React from 'react';
-import {View} from 'react-native';
+import {BackButton} from 'umi';
+import {WhiteSpace} from '@ant-design/react-native';
 
 export default function Layout({children}) {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <BackButton>
+      <WhiteSpace size="xl" />
+      <WhiteSpace size="xl" />
       {children}
-    </View>
+    </BackButton>
   );
 }

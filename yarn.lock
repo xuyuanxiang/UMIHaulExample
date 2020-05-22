@@ -2,6 +2,30 @@
 # yarn lockfile v1
 
 
+"@ant-design/icons-react-native@^2.0.0":
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/@ant-design/icons-react-native/-/icons-react-native-2.2.1.tgz#0d21226fefa90471129dba864efb6c437627fb37"
+  integrity sha512-4hjvlhyVNBrkctMe22moR6qgXwro0pXFlUsI6vNQSqv3W6FqPoVVXGy9nKaF3vDWiO0jUW9CnMYicyf7pwwkWw==
+
+"@ant-design/react-native@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/@ant-design/react-native/-/react-native-3.3.0.tgz#ecd1ef6e34f09e21e5969bce60996c5d8eeb01c3"
+  integrity sha512-Gxck2jIYaUKI2TiL5CZ2vGcAJozL005daINI7ZTAfpAWoZAX2B1bI4emdf6+9ur7evyvsAVVzLl3b+28tRsQYA==
+  dependencies:
+    "@ant-design/icons-react-native" "^2.0.0"
+    "@bang88/react-native-drawer-layout" "^2.0.3"
+    "@bang88/react-native-ultimate-listview" "^3.3.0"
+    "@react-native-community/viewpager" "^1.1.7"
+    array-tree-filter "~2.1.0"
+    babel-runtime "^6.x"
+    deepmerge "^3.0.0"
+    normalize-css-color "^1.0.2"
+    react-native-collapsible "^1.4.0"
+    react-native-modal-popover "^0.0.12"
+    react-native-safe-area-view "^0.11.0"
+    react-native-swipeout "^2.3.6"
+    utility-types "^2.1.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -1189,6 +1213,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@bang88/react-native-drawer-layout@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/@bang88/react-native-drawer-layout/-/react-native-drawer-layout-2.0.3.tgz#a93abd5a9c6d1fc4c0924a9f21c2cd7d1deea88d"
+  integrity sha512-rSMgODo8G8bBxLiR4YD9FVLx0U+0/6ABFbfBQ/2PjMNBFjqa6IiAK1uTivMjRgykri1EacDHb81Qd/DkqUrHJw==
+
+"@bang88/react-native-ultimate-listview@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/@bang88/react-native-ultimate-listview/-/react-native-ultimate-listview-3.3.0.tgz#b09199105b942aee4ae05729e4bd229353217ab6"
+  integrity sha512-qRH8YV1Hi0dJpSQ9VCoWMVFuvxwZ4F5N73fqYMjSh0tGlG/p95WlaM/WVg9PFMphP5Sv5FO0p+vbBKWrbwdE0g==
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
@@ -2014,6 +2048,11 @@
   resolved "https://registry.npmjs.org/@react-native-community/eslint-plugin/-/eslint-plugin-1.1.0.tgz#e42b1bef12d2415411519fd528e64b593b1363dc"
   integrity sha512-W/J0fNYVO01tioHjvYWQ9m6RgndVtbElzYozBq1ZPrHO/iCzlqoySHl4gO/fpCl9QEFjvJfjPgtPMTMlsoq5DQ==
 
+"@react-native-community/viewpager@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/@react-native-community/viewpager/-/viewpager-1.1.7.tgz#7d3b1631f1ec91145db92a8e25c80d53027e96ba"
+  integrity sha512-k9v2KJtAprNPq7IZmedD2VLMePvPW+ohX3uDnkpoKritBji+/RtRmTKrdtPi3Uvp0toq/KtPttAds1dr7AZNpw==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -2463,7 +2502,7 @@
   resolved "https://registry.npmjs.org/@types/prettier/-/prettier-2.0.1.tgz#b6e98083f13faa1e5231bfa3bdb1b0feff536b6d"
   integrity sha512-boy4xPNEtiw6N3abRhBi/e7hNvy3Tt8E9ZRAQrwAGzoCGZS/1wjo9KY7JHhnfnEsG5wSjDbymCozUM9a3ea7OQ==
 
-"@types/prop-types@*":
+"@types/prop-types@*", "@types/prop-types@^15.5.5":
   version "15.7.3"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
@@ -3563,6 +3602,11 @@ array-slice@^0.2.3:
   resolved "https://registry.npmjs.org/array-slice/-/array-slice-0.2.3.tgz#dd3cfb80ed7973a75117cdac69b0b99ec86186f5"
   integrity sha1-3Tz7gO15c6dRF82sabC5nshhhvU=
 
+array-tree-filter@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/array-tree-filter/-/array-tree-filter-2.1.0.tgz#873ac00fec83749f255ac8dd083814b4f6329190"
+  integrity sha512-4ROwICNlNw/Hqa9v+rk5h22KjmzB1JGTMVKP2AKJBOCgb0yL0ASf0+YvCcLNNwquOHNX48jkeZIJ3a+oOQqKcw==
+
 array-union@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/array-union/-/array-union-1.0.2.tgz#9a34410e4f4e3da23dea375be5be70f24778ec39"
@@ -3860,7 +3904,7 @@ babel-preset-jest@^26.0.0:
     babel-plugin-jest-hoist "^26.0.0"
     babel-preset-current-node-syntax "^0.1.2"
 
-babel-runtime@^6.9.2:
+babel-runtime@^6.9.2, babel-runtime@^6.x:
   version "6.26.0"
   resolved "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -4998,7 +5042,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.6.3:
+create-react-class@^15.6.0, create-react-class@^15.6.3:
   version "15.6.3"
   resolved "https://registry.npmjs.org/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha512-M+/3Q6E6DLO6Yx3OwrWjwHBnvfXXYA7W+dFjt/ZDBemHO1DDZhsalX/NUtnTYclN6GfnBDRh4qRHjcDHmlJBJg==
@@ -5394,7 +5438,7 @@ deepmerge@^1.5.2:
   resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
   integrity sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==
 
-deepmerge@^3.2.0:
+deepmerge@^3.0.0, deepmerge@^3.2.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
   integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
@@ -7123,6 +7167,11 @@ hmac-drbg@^1.0.0:
     hash.js "^1.0.3"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
+
+hoist-non-react-statics@^2.3.1:
+  version "2.5.5"
+  resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+  integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
 
 hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0:
   version "3.3.2"
@@ -8856,6 +8905,11 @@ lodash._reinterpolate@^3.0.0:
   resolved "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
 lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
@@ -9986,6 +10040,11 @@ node-stream-zip@^1.9.1:
   version "1.11.1"
   resolved "https://registry.npmjs.org/node-stream-zip/-/node-stream-zip-1.11.1.tgz#7af41e2622f1dc354db602e53f7a62e21a69308e"
   integrity sha512-eiNM9UJ26OkbOLfv4VI8X94KRw28xMq2cpWapRsR/aWXGu+hNFvEY889Glm6qi43wtbjcMSU1oFxv5XZ0OKhbA==
+
+normalize-css-color@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/normalize-css-color/-/normalize-css-color-1.0.2.tgz#02991e97cccec6623fe573afbbf0de6a1f3e9f8d"
+  integrity sha1-Apkel8zOxmI/5XOvu/Deah8+n40=
 
 normalize-package-data@^2.5.0:
   version "2.5.0"
@@ -11500,7 +11559,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -11638,6 +11697,13 @@ queue@6.0.1:
   dependencies:
     inherits "~2.0.3"
 
+raf@^3.1.0:
+  version "3.4.1"
+  resolved "https://registry.npmjs.org/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
+  integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
+  dependencies:
+    performance-now "^2.1.0"
+
 randomatic@^3.0.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/randomatic/-/randomatic-3.1.1.tgz#b776efc59375984e36c537b2f51a1f0aff0da1ed"
@@ -11712,6 +11778,38 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-native-collapsible@^1.4.0:
+  version "1.5.2"
+  resolved "https://registry.npmjs.org/react-native-collapsible/-/react-native-collapsible-1.5.2.tgz#544616dc04a71870508dc707049544a805402993"
+  integrity sha512-pmETueIStEhKY93yO/nh+G9jyMZaZta9xyUO51KP+p/tefXDtDG8Ok9QELld0Fk/kiDOldvG5Tjy+JcdS8Sdxw==
+  dependencies:
+    prop-types "^15.6.2"
+
+react-native-modal-popover@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.npmjs.org/react-native-modal-popover/-/react-native-modal-popover-0.0.12.tgz#5c0b5e9e0323490c3c5867821fc94b6582bfa3dc"
+  integrity sha512-uZQsTDcGOI8y/05L/Lb0OMBesJYYRWEc0pj2038a579LnDnJJpKay0kD654cQpA4Ozt3xbu4DMTGwenynBSEFg==
+  dependencies:
+    "@types/prop-types" "^15.5.5"
+    lodash.debounce "^4.0.8"
+    prop-types "^15.6.2"
+
+react-native-safe-area-view@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npmjs.org/react-native-safe-area-view/-/react-native-safe-area-view-0.11.0.tgz#4f3dda43c2bace37965e7c6aef5fc83d4f19d174"
+  integrity sha512-N3nElaahu1Me2ltnfc9acpgt1znm6pi8DSadKy79kvdzKwvVIzw0IXueA/Hjr51eCW1BsfNw7D1SgBT9U6qEkA==
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+
+react-native-swipeout@^2.3.6:
+  version "2.3.6"
+  resolved "https://registry.npmjs.org/react-native-swipeout/-/react-native-swipeout-2.3.6.tgz#47dac8a835825cf3f2eef9e495574a3d9ab6d3fa"
+  integrity sha512-t9suUCspzck4vp2pWggWe0frS/QOtX6yYCawHnEes75A7dZCEE74bxX2A1bQzGH9cUMjq6xsdfC94RbiDKIkJg==
+  dependencies:
+    create-react-class "^15.6.0"
+    prop-types "^15.5.10"
+    react-tween-state "^0.1.5"
 
 react-native@0.62.2:
   version "0.62.2"
@@ -11848,6 +11946,14 @@ react-test-renderer@16.11.0:
     prop-types "^15.6.2"
     react-is "^16.8.6"
     scheduler "^0.17.0"
+
+react-tween-state@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/react-tween-state/-/react-tween-state-0.1.5.tgz#e98b066551efb93cb92dd1be14995c2e3deae339"
+  integrity sha1-6YsGZVHvuTy5LdG+FJlcLj3q4zk=
+  dependencies:
+    raf "^3.1.0"
+    tween-functions "^1.0.1"
 
 react@16.11.0:
   version "16.11.0"
@@ -13538,6 +13644,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tween-functions@^1.0.1:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha1-GuOlDnxguz3vd06scHrLynO7w/8=
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
@@ -13629,6 +13740,11 @@ ultron@1.0.x:
   version "1.0.2"
   resolved "https://registry.npmjs.org/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
   integrity sha1-rOEWq1V80Zc4ak6I9GhTeMiy5Po=
+
+umi-plugin-antd-react-native@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.npmjs.org/umi-plugin-antd-react-native/-/umi-plugin-antd-react-native-0.3.4.tgz#9cdc41cd51a03e678dd709aef8d65931a9ff0564"
+  integrity sha512-k+xdN6ZZ44YOccrjxTkjqkLYKn0wXZCAABYji7OX8tHVZr5hb0XVeyue7SS1HBTnHx72aTxh+5aPdJQIg08tAw==
 
 umi-preset-react-native@^0.3.4:
   version "0.3.4"
@@ -13843,6 +13959,11 @@ util@^0.11.0:
   integrity sha512-HShAsny+zS2TZfaXxD9tYj4HQGlBezXZMZuM/S5PKLLoZkShZiGk9o5CzukI1LVHZvjdvZ2Sj1aW/Ndn2NB/HQ==
   dependencies:
     inherits "2.0.3"
+
+utility-types@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/utility-types/-/utility-types-2.1.0.tgz#0c78fc9f7eb424d14302222b4ddd13fdb17f44ab"
+  integrity sha512-/nP2gqavggo6l38rtQI/CdeV+2fmBGXVvHgj9kV2MAnms3TIi77Mz9BtapPFI0+GZQCqqom0vACQ+VlTTaCovw==
 
 utility-types@^3.10.0:
   version "3.10.0"
