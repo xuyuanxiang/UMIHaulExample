@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "haul": "haul start --temp-dir android/app/src/main/assets --assets-dest android/app/src/main/assets",
     "prebundle": "umi g rn",
-    "bundle": "haul multi-bundle --assets-dest android/app/src/main/assets --platform android --dev false --minify true"
+    "bundle:android": "haul multi-bundle --assets-dest android/app/src/main/assets --platform android --dev false --minify true",
+    "bundle:ios": "haul multi-bundle --assets-dest ios/assets --bundle-output ios --platform ios --dev false --minify true",
+    "bundle": "yarn bundle:android | yarn bundle:ios"
   },
   "dependencies": {
     "@ant-design/react-native": "3.3.0",
