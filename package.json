@@ -9,7 +9,9 @@
     "watch": "umi g rn --dev",
     "test": "jest",
     "lint": "eslint .",
-    "haul": "haul start"
+    "haul": "haul start --temp-dir android/app/src/main/assets --assets-dest android/app/src/main/assets",
+    "prebundle": "umi g rn",
+    "bundle": "haul multi-bundle --assets-dest android/app/src/main/assets --platform android --dev false --minify true"
   },
   "dependencies": {
     "@ant-design/react-native": "3.3.0",
@@ -37,7 +39,8 @@
     "umi": "^3.2.2",
     "umi-plugin-antd-react-native": "^0.3.4",
     "umi-preset-react-native": "^0.3.4",
-    "umi-preset-react-navigation": "^0.3.4"
+    "umi-preset-react-navigation": "^0.3.4",
+    "umi-react-native-multibundle": "^0.3.4"
   },
   "jest": {
     "preset": "react-native"
