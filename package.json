@@ -13,7 +13,7 @@
     "prebundle": "umi g rn",
     "bundle:android": "haul multi-bundle --assets-dest android/app/src/main/assets --platform android --dev false --minify true",
     "bundle:ios": "haul multi-bundle --assets-dest ios/assets --bundle-output ios --platform ios --dev false --minify true",
-    "bundle": "yarn bundle:android | yarn bundle:ios"
+    "bundle": "yarn bundle:android && yarn bundle:ios"
   },
   "dependencies": {
     "@ant-design/react-native": "3.3.0",
