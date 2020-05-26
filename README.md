@@ -42,13 +42,7 @@
 yarn
 ```
 
-链接`@ant-design/react-native`字体（图标）资源文件：
-
-```npm
-yarn react-native link
-```
-
-对于**iOS**还需要进到 ios 工程目录使用 pod 安装原生依赖（Android 跳过这一步）：
+进到 ios 工程目录使用 pod 安装原生依赖（Android 跳过这一步）：
 
 ```shell
 cd ios && pod install && cd -
