@@ -7,7 +7,7 @@
 1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
 2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
 
-在正式发布阶段，使用：[haul](https://github.com/callstack/haul)进行拆包。
+在发布阶段使用[haul](https://github.com/callstack/haul)进行拆包。
 
 当前 master 分支最新代码集成了：
 
