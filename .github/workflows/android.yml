@@ -16,7 +16,7 @@ jobs:
           yarn install
       - name: Build Android Release
         run: |
-          cd android && ./gradlew assembleRelease
+          yarn release:android
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
