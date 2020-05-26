@@ -48,7 +48,7 @@
 
 ### 开发
 
-从 github clone 到本地后，使用 yarn 安装依赖：
+clone 到本地后，进到工程根目录，使用 yarn 安装依赖：
 
 ```npm
 yarn
@@ -158,7 +158,7 @@ _cliPath: 由 haul 添加。_
 
 #### iOS
 
-按照下图，在`Build Phases`文件中添加`BUNDLE_COMMAND`环境变量：
+在 Xcode `Build Phases` 选项卡中找到截图所示位置，添加`BUNDLE_COMMAND`环境变量：
 
 ![](https://cdn.xuyuanxiang.me/ios_build_config_7e22a742.png)
 
