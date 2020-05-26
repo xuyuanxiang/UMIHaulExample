@@ -1,5 +1,7 @@
 # UMIHaulExample
 
+![](https://github.com/xuyuanxiang/UMIHaulExample/workflows/android/badge.svg?branch=feature/multibundle)
+
 [umi-react-native](https://github.com/xuyuanxiang/umi-react-native#readme)示例工程。
 
 在开发阶段使用[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)，不拆包，因为：
@@ -20,10 +22,6 @@
 你可以使用**UMIHaulExample**作为模板，[快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)业务开发；
 
 也可以从零开始徒手搭建，在[变更记录](#%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95)中追溯每一步代码变动的内容。
-
-扫码下载 Android 示例：
-
-
 
 ## 目录
 
