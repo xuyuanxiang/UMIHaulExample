@@ -19,6 +19,10 @@
 ## 目录
 
 - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
+- [拆包](#%E6%8B%86%E5%8C%85)
+  - [拆包策略](#%E6%8B%86%E5%8C%85%E7%AD%96%E7%95%A5)
+  - [Android](#android)
+  - [iOS](#ios)
 - [变更记录](#%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95)
   - [0.0.1-初始工程](#001-%E5%88%9D%E5%A7%8B%E5%B7%A5%E7%A8%8B)
   - [0.0.2-安装 haul](#002-%E5%AE%89%E8%A3%85-haul)
@@ -70,6 +74,64 @@ yarn android
 
 ```npm
 yarn ios
+```
+
+## 拆包
+
+开发阶段使用：[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)，因为：
+
+1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
+2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
+
+构建离线包使用：[haul](https://github.com/callstack/haul)拆包。
+
+### 拆包策略
+
+- 主包：
+  - umi 生成的临时文件；
+  - 依赖项：
+    - react-router
+    - history
+    - react
+    - react-native
+    - react-router-native
+    - umi-react-native-multibundle
+    - dva
+    - @react-native-community/masked-view
+    - react-native-gesture-handler
+    - react-native-reanimated
+    - react-native-safe-area-context
+    - react-native-screens
+    - umi-renderer-react-navigation
+    - umi
+
+* 分包：pages 目录下每个页面都单独拆为一个分包，路由访问到时按需加载。
+
+执行：
+
+```npm
+yarn bundle
+```
+
+会构建产出 iOS 和 Android 的离线包。
+
+### Android
+
+![](https://cdn.xuyuanxiang.me/android_multibundle_ad44930f.png)
+
+### iOS
+
+![](https://cdn.xuyuanxiang.me/ios_multibundle_894ca845.png)
+
+需要修改[AppDelegate.m](ios/UMIHaulExample/AppDelegate.m)文件：
+
+```diff
+ #if DEBUG
+   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+ #else
+-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
++  return [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"ios.bundle"];
+ #endif
 ```
 
 ## 变更记录

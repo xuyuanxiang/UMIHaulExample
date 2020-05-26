@@ -9,10 +9,10 @@
     "watch": "umi g rn --dev",
     "test": "jest",
     "lint": "eslint .",
-    "haul": "haul start --temp-dir android/app/src/main/assets --assets-dest android/app/src/main/assets",
-    "prebundle": "umi g rn",
+    "haul": "haul start --temp-dir dist",
+    "prebundle": "cross-env UMI_ENV=prod umi g rn",
     "bundle:android": "haul multi-bundle --assets-dest android/app/src/main/assets --platform android --dev false --minify true",
-    "bundle:ios": "haul multi-bundle --assets-dest ios/assets --bundle-output ios --platform ios --dev false --minify true",
+    "bundle:ios": "haul multi-bundle --assets-dest ios --platform ios --dev false --minify true",
     "bundle": "yarn bundle:android && yarn bundle:ios"
   },
   "dependencies": {
@@ -23,7 +23,8 @@
     "react-native-gesture-handler": "1.6.1",
     "react-native-reanimated": "1.8.0",
     "react-native-safe-area-context": "1.0.2",
-    "react-native-screens": "2.7.0"
+    "react-native-screens": "2.7.0",
+    "umi-react-native-multibundle": "^0.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -34,15 +35,15 @@
     "@react-native-community/eslint-config": "^1.1.0",
     "@umijs/plugin-dva": "^0.7.2",
     "babel-jest": "^26.0.1",
+    "cross-env": "^7.0.2",
     "eslint": "^7.0.0",
     "jest": "^26.0.1",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.11.0",
     "umi": "^3.2.2",
-    "umi-plugin-antd-react-native": "^0.3.4",
-    "umi-preset-react-native": "^0.3.4",
-    "umi-preset-react-navigation": "^0.3.4",
-    "umi-react-native-multibundle": "^0.3.4"
+    "umi-plugin-antd-react-native": "^0.4.0",
+    "umi-preset-react-native": "^0.4.0",
+    "umi-preset-react-navigation": "^0.4.0"
   },
   "jest": {
     "preset": "react-native"
