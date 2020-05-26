@@ -19,12 +19,18 @@
 ## 目录
 
 - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
+  - [开发](#%E5%BC%80%E5%8F%91)
+  - [发布](#%E5%8F%91%E5%B8%83)
+    - [仅输出 JS Bundle](#%E4%BB%85%E8%BE%93%E5%87%BA-js-bundle)
+      - [Android](#android)
+      - [iOS](#ios)
+    - [构建 iOS App](#%E6%9E%84%E5%BB%BA-ios-app)
+    - [构建 Android App](#%E6%9E%84%E5%BB%BA-android-app)
 - [拆包](#%E6%8B%86%E5%8C%85)
   - [拆包策略](#%E6%8B%86%E5%8C%85%E7%AD%96%E7%95%A5)
-  - [手工拆包](#%E6%89%8B%E5%B7%A5%E6%8B%86%E5%8C%85)
   - [将拆包加入原生 App 构建流程](#%E5%B0%86%E6%8B%86%E5%8C%85%E5%8A%A0%E5%85%A5%E5%8E%9F%E7%94%9F-app-%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B)
-    - [Android](#android)
-    - [iOS](#ios)
+    - [Android](#android-1)
+    - [iOS](#ios-1)
 - [变更记录](#%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95)
   - [0.0.1-初始工程](#001-%E5%88%9D%E5%A7%8B%E5%B7%A5%E7%A8%8B)
   - [0.0.2-安装 haul](#002-%E5%AE%89%E8%A3%85-haul)
@@ -32,9 +38,10 @@
   - [1.0.0-集成 DvaJS](#100-%E9%9B%86%E6%88%90-dvajs)
   - [1.1.0-集成 @ant-design/react-native](#110-%E9%9B%86%E6%88%90-ant-designreact-native)
   - [1.2.0-集成 react-navigation](#120-%E9%9B%86%E6%88%90-react-navigation)
-- [构建离线包](#%E6%9E%84%E5%BB%BA%E7%A6%BB%E7%BA%BF%E5%8C%85)
 
 ## 快速开始
+
+### 开发
 
 从 github clone 到本地后，使用 yarn 安装依赖：
 
@@ -64,6 +71,48 @@ yarn android
 
 ```npm
 yarn ios
+```
+
+### 发布
+
+#### 仅输出 JS Bundle
+
+执行下面命令，会输出 js bundle 到 `/dist/ios`和`/dist/android`目录。
+
+```npm
+yarn bundle
+```
+
+之后可以提供给原生开发的同学。
+
+##### Android
+
+将`/dist`目录下的`/android`目录重名为`assets`并移动到下图位置：
+
+![](https://cdn.xuyuanxiang.me/android_multibundle_ad44930f.png)
+
+##### iOS
+
+将`/dist/ios`目录下所有文件和目录直接拖拽到 Xcode 中即可：
+
+![](https://cdn.xuyuanxiang.me/ios_multibundle_894ca845.png)
+
+_Xcode 会自动把这些文件和目录添加到右侧的`Copy Bundle Resources`中。_
+
+#### 构建 iOS App
+
+执行下面命令，会先构建生成 iOS 的 JS bundle，然后再使用`xcodebuild`命令行工具构建 App：
+
+```npm
+yarn release:ios
+```
+
+#### 构建 Android App
+
+执行下面命令，会先构建生成 Android 的 JS bundle，然后再使用`gradle`命令行工具构建 App：
+
+```npm
+yarn release:android
 ```
 
 ## 拆包
@@ -97,16 +146,6 @@ yarn ios
 
 * 分包：pages 目录下每个页面都单独拆为一个分包，路由访问到时按需加载。
 
-### 手工拆包
-
-执行：
-
-```npm
-yarn bundle
-```
-
-构建产出 iOS 和 Android 的离线包。
-
 ### 将拆包加入原生 App 构建流程
 
 按照如下描述追加相关配置后，在构建正式的 iOS/Android 安装包时，会使用 haul 拆包：
@@ -126,17 +165,6 @@ _cliPath: 由 haul 添加。_
 ![](https://cdn.xuyuanxiang.me/ios_build_config_7e22a742.png)
 
 _CLI_PATH: 由 haul 添加。_
-
-需要修改[AppDelegate.m](ios/UMIHaulExample/AppDelegate.m)文件：
-
-```diff
- #if DEBUG
-   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
- #else
--  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-+  return [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"ios.bundle"];
- #endif
-```
 
 ## 变更记录
 
@@ -207,13 +235,3 @@ yarn add umi-preset-react-navigation --dev && yarn add react-native-reanimated r
 查看变动内容：
 
 - [compare/1.1.0...1.2.0](https://github.com/xuyuanxiang/UMIHaulExample/compare/1.0.0...1.2.0)
-
-## 构建离线包
-
-先使用 umi 生成中间代码：
-
-```npm
-umi g rn
-```
-
-再使用[haul bundle](https://github.com/callstack/haul/blob/master/docs/CLI%20Commands.md#haul-bundle)构建离线包（offline bundle)。

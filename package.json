@@ -11,9 +11,13 @@
     "lint": "eslint .",
     "haul": "haul start --temp-dir dist",
     "prebundle": "cross-env UMI_ENV=prod umi g rn",
-    "bundle:android": "haul multi-bundle --assets-dest android/app/src/main/assets --platform android --dev false --minify true",
-    "bundle:ios": "haul multi-bundle --assets-dest ios --platform ios --dev false --minify true",
-    "bundle": "yarn bundle:android && yarn bundle:ios"
+    "bundle:android": "haul multi-bundle --assets-dest dist/android --platform android --dev false --minify true",
+    "bundle:ios": "haul multi-bundle --assets-dest dist/ios --platform ios --dev false --minify true",
+    "bundle": "rimraf dist && yarn bundle:android && yarn bundle:ios",
+    "prerelease:android": "cross-env UMI_ENV=prod umi g rn",
+    "release:android": "cd android && ./gradlew assemble",
+    "prerelease:ios": "cross-env UMI_ENV=prod umi g rn",
+    "release:ios": "cd ios && rimraf build && /usr/bin/xcodebuild -sdk iphoneos -scheme UMIHaulExample -workspace UMIHaulExample.xcworkspace -configuration Release"
   },
   "dependencies": {
     "@ant-design/react-native": "3.3.0",
