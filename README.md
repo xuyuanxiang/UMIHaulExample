@@ -21,8 +21,10 @@
 - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
 - [拆包](#%E6%8B%86%E5%8C%85)
   - [拆包策略](#%E6%8B%86%E5%8C%85%E7%AD%96%E7%95%A5)
-  - [Android](#android)
-  - [iOS](#ios)
+  - [手工拆包](#%E6%89%8B%E5%B7%A5%E6%8B%86%E5%8C%85)
+  - [将拆包加入原生 App 构建流程](#%E5%B0%86%E6%8B%86%E5%8C%85%E5%8A%A0%E5%85%A5%E5%8E%9F%E7%94%9F-app-%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B)
+    - [Android](#android)
+    - [iOS](#ios)
 - [变更记录](#%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95)
   - [0.0.1-初始工程](#001-%E5%88%9D%E5%A7%8B%E5%B7%A5%E7%A8%8B)
   - [0.0.2-安装 haul](#002-%E5%AE%89%E8%A3%85-haul)
@@ -101,21 +103,35 @@ yarn ios
 
 * 分包：pages 目录下每个页面都单独拆为一个分包，路由访问到时按需加载。
 
+### 手工拆包
+
 执行：
 
 ```npm
 yarn bundle
 ```
 
-会构建产出 iOS 和 Android 的离线包。
+构建产出 iOS 和 Android 的离线包。
 
-### Android
+### 将拆包加入原生 App 构建流程
 
-![](https://cdn.xuyuanxiang.me/android_multibundle_ad44930f.png)
+按照如下描述追加相关配置后，在构建正式的 iOS/Android 安装包时，会使用 haul 拆包：
 
-### iOS
+#### Android
 
-![](https://cdn.xuyuanxiang.me/ios_multibundle_894ca845.png)
+按照下图，在`build.gradle`文件中添加`bundleCommand`配置：
+
+![](https://cdn.xuyuanxiang.me/android_build_config_0f53bcb0.png)
+
+_cliPath: 由 haul 添加。_
+
+#### iOS
+
+按照下图，在`Build Phases`文件中添加`BUNDLE_COMMAND`环境变量：
+
+![](https://cdn.xuyuanxiang.me/ios_build_config_7e22a742.png)
+
+_CLI_PATH: 由 haul 添加。_
 
 需要修改[AppDelegate.m](ios/UMIHaulExample/AppDelegate.m)文件：
 
