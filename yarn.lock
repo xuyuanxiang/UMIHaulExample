@@ -13867,10 +13867,10 @@ umi-plugin-antd-react-native@^0.4.0:
   resolved "https://registry.npmjs.org/umi-plugin-antd-react-native/-/umi-plugin-antd-react-native-0.4.0.tgz#ff4bcb77ee8e75635578314a5fc74e2635974b54"
   integrity sha512-KldX41pztf9QJYXzj3oKRgbdQp8LSyO09U/7/Bps+aHP/SN7AnqR36WFrel9kldL/9G6NxeD29cqvSShv2lcaA==
 
-umi-preset-react-native@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/umi-preset-react-native/-/umi-preset-react-native-0.4.0.tgz#586f6c38057ac6d4a15d0a05a647ce24472f128a"
-  integrity sha512-XjmaZwH39xt7CBAo33sld7w1NGaM8G7N3gYiR5Lf81x4CdXWhRi9drYeKqtgJYT7SZpazfdJCHHsEG/43oMnvQ==
+umi-preset-react-native@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.npmjs.org/umi-preset-react-native/-/umi-preset-react-native-0.4.2.tgz#a3fb1290f1f1c65ccfa258fd7925918933acecaa"
+  integrity sha512-PDJo88UM29yiMwU67sIZBodKx4EP1vjalv9+0/3oFKpMiwYiVgzp2d0O9+867gScXEzpTpY9vB4L6vGGKt6n7w==
   dependencies:
     "@types/react-router-native" "5.1.0"
     "@umijs/runtime" "^3.0.0"
@@ -13885,10 +13885,10 @@ umi-preset-react-navigation@^0.4.0:
   dependencies:
     umi-renderer-react-navigation "^0.4.0"
 
-umi-react-native-multibundle@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/umi-react-native-multibundle/-/umi-react-native-multibundle-0.4.1.tgz#a30b1bf5558228518d19bea6a3834d376d8cecc3"
-  integrity sha512-EUyO9yeNR7aIIX3P7veFuGM7VVt3W6g8bYGgN0KE6P8Q9tu7cYJd7fJ87Fu2yRcuvCU+9W13lliKle4LY67FPQ==
+umi-react-native-multibundle@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.npmjs.org/umi-react-native-multibundle/-/umi-react-native-multibundle-0.4.2.tgz#1b9bada3754fbdc6054f9abab77afde30084b32c"
+  integrity sha512-PSfsjA2cPSzo2fO9N9owOMkigAWprS86soaN3h71pQGvJVnLnyuDNLag4Pqd3MD3z/SM5pE62UG4y4vzl7w6TA==
 
 umi-renderer-react-navigation@^0.4.0:
   version "0.4.0"

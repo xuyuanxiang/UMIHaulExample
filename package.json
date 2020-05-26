@@ -15,7 +15,7 @@
     "bundle:ios": "haul multi-bundle --assets-dest dist/ios --platform ios --dev false --minify true",
     "bundle": "rimraf dist && yarn bundle:android && yarn bundle:ios",
     "prerelease:android": "cross-env UMI_ENV=prod umi g rn",
-    "release:android": "cd android && ./gradlew assemble",
+    "release:android": "cd android && ./gradlew assembleRelease",
     "prerelease:ios": "cross-env UMI_ENV=prod umi g rn",
     "release:ios": "cd ios && rimraf build && /usr/bin/xcodebuild -sdk iphoneos -scheme UMIHaulExample -workspace UMIHaulExample.xcworkspace -configuration Release"
   },
