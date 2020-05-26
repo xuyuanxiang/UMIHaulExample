@@ -58,12 +58,6 @@ cd ios && pod install && cd -
 yarn watch
 ```
 
-另启一个终端，启动 haul dev web server:
-
-```npm
-yarn haul
-```
-
 再另启一个终端，启动 Android 应用：
 
 ```npm
