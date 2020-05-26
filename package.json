@@ -28,7 +28,7 @@
     "react-native-reanimated": "1.8.0",
     "react-native-safe-area-context": "1.0.2",
     "react-native-screens": "2.7.0",
-    "umi-react-native-multibundle": "^0.4.1"
+    "umi-react-native-multibundle": "^0.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -46,7 +46,7 @@
     "react-test-renderer": "16.11.0",
     "umi": "^3.2.2",
     "umi-plugin-antd-react-native": "^0.4.0",
-    "umi-preset-react-native": "^0.4.0",
+    "umi-preset-react-native": "^0.4.2",
     "umi-preset-react-navigation": "^0.4.0"
   },
   "jest": {

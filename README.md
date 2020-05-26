@@ -2,7 +2,12 @@
 
 [umi-react-native](https://github.com/xuyuanxiang/umi-react-native#readme)示例工程。
 
-项目使用第三方打包器 [haul](https://github.com/callstack/haul) 取代 RN 官方的 React Native CLI。
+开发阶段不拆包，使用：[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)因为：
+
+1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
+2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
+
+在正式发布阶段，使用：[haul](https://github.com/callstack/haul)进行拆包。
 
 当前 master 分支最新代码集成了：
 
@@ -116,13 +121,6 @@ yarn release:android
 ```
 
 ## 拆包
-
-开发阶段不拆包，使用：[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)因为：
-
-1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
-2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
-
-发布时，使用：[haul](https://github.com/callstack/haul)拆包。
 
 ### 拆包策略
 
