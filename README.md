@@ -2,7 +2,7 @@
 
 [umi-react-native](https://github.com/xuyuanxiang/umi-react-native#readme)示例工程。
 
-开发阶段不拆包，使用：[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)因为：
+在开发阶段使用[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)，不拆包，因为：
 
 1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
 2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
