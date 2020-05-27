@@ -22,8 +22,8 @@
     - [仅输出 JS Bundle](#%E4%BB%85%E8%BE%93%E5%87%BA-js-bundle)
       - [Android](#android)
       - [iOS](#ios)
-    - [构建 iOS App](#%E6%9E%84%E5%BB%BA-ios-app)
-    - [构建 Android App](#%E6%9E%84%E5%BB%BA-android-app)
+    - [构建 iOS ipa](#%E6%9E%84%E5%BB%BA-ios-ipa)
+    - [构建 Android apk](#%E6%9E%84%E5%BB%BA-android-apk)
 - [拆包](#%E6%8B%86%E5%8C%85)
   - [拆包策略](#%E6%8B%86%E5%8C%85%E7%AD%96%E7%95%A5)
   - [将拆包加入原生 App 构建流程](#%E5%B0%86%E6%8B%86%E5%8C%85%E5%8A%A0%E5%85%A5%E5%8E%9F%E7%94%9F-app-%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B)
@@ -98,17 +98,17 @@ yarn bundle
 
 _Xcode 会自动把这些文件和目录添加到右侧的`Copy Bundle Resources`中。_
 
-#### 构建 iOS App
+#### 构建 iOS ipa
 
-执行下面命令，会先构建生成 iOS 的 JS bundle，然后再使用`xcodebuild`命令行工具构建 App：
+执行下面命令，会先构建生成 iOS 的 JS bundle，然后再使用`xcodebuild`命令行工具构建安装包：
 
 ```npm
 yarn release:ios
 ```
 
-#### 构建 Android App
+#### 构建 Android apk
 
-执行下面命令，会先构建生成 Android 的 JS bundle，然后再使用`gradle`命令行工具构建 App：
+执行下面命令，会先构建生成 Android 的 JS bundle，然后再使用`gradle`命令行工具构建安装包：
 
 ```npm
 yarn release:android
