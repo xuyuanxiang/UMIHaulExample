@@ -1,7 +1,5 @@
 # UMIHaulExample
 
-![](https://github.com/xuyuanxiang/UMIHaulExample/workflows/android/badge.svg?branch=feature/multibundle)
-
 [umi-react-native](https://github.com/xuyuanxiang/umi-react-native#readme)示例工程。
 
 当前 master 分支最新代码集成了：
