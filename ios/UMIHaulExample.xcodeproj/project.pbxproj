@@ -21,13 +21,6 @@
 		C0114A548C6CFBF32AA5FE2D /* libPods-UMIHaulExample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE7642F673C471526B2F078 /* libPods-UMIHaulExample-tvOSTests.a */; };
 		C86C18D8672C42B59708BC9E /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE34D09155154C338879B998 /* antoutline.ttf */; };
 		D0CF2D48C2BF467E9CD25AE0 /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0A908D529C14675998982E1 /* antfill.ttf */; };
-		D939326C247CEDC20068BD39 /* index.ios.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9393263247CEDC10068BD39 /* index.ios.bundle */; };
-		D939326D247CEDC20068BD39 /* index.ios.bundle.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D9393264247CEDC10068BD39 /* index.ios.bundle.LICENSE.txt */; };
-		D939326E247CEDC20068BD39 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D9393265247CEDC10068BD39 /* assets */; };
-		D939326F247CEDC20068BD39 /* index.manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D9393267247CEDC10068BD39 /* index.manifest.json */; };
-		D9393270247CEDC20068BD39 /* layouts in Resources */ = {isa = PBXBuildFile; fileRef = D9393269247CEDC20068BD39 /* layouts */; };
-		D9393271247CEDC20068BD39 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = D939326A247CEDC20068BD39 /* pages */; };
-		D9393272247CEDC20068BD39 /* host.ios.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D939326B247CEDC20068BD39 /* host.ios.bundle */; };
 		F68D4731A1E6AD1A1723C2F1 /* libPods-UMIHaulExample-UMIHaulExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A42F58E96327B31A21065DC /* libPods-UMIHaulExample-UMIHaulExampleTests.a */; };
 /* End PBXBuildFile section */
 
@@ -75,15 +68,6 @@
 		B0A908D529C14675998982E1 /* antfill.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antfill.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; };
 		BE34D09155154C338879B998 /* antoutline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
 		C0C540CDE2C8E1CECD0A4A50 /* Pods-UMIHaulExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMIHaulExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-UMIHaulExample-tvOS/Pods-UMIHaulExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D9393263247CEDC10068BD39 /* index.ios.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.ios.bundle; sourceTree = "<group>"; };
-		D9393264247CEDC10068BD39 /* index.ios.bundle.LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.ios.bundle.LICENSE.txt; sourceTree = "<group>"; };
-		D9393265247CEDC10068BD39 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		D9393266247CEDC10068BD39 /* host.ios.bundle.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = host.ios.bundle.map; sourceTree = "<group>"; };
-		D9393267247CEDC10068BD39 /* index.manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.manifest.json; sourceTree = "<group>"; };
-		D9393268247CEDC20068BD39 /* index.ios.bundle.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = index.ios.bundle.map; sourceTree = "<group>"; };
-		D9393269247CEDC20068BD39 /* layouts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = layouts; sourceTree = "<group>"; };
-		D939326A247CEDC20068BD39 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pages; sourceTree = "<group>"; };
-		D939326B247CEDC20068BD39 /* host.ios.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = host.ios.bundle; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FD040907CE96AFD9FB8C770F /* libPods-UMIHaulExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UMIHaulExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,15 +129,6 @@
 		13B07FAE1A68108700A75B9A /* UMIHaulExample */ = {
 			isa = PBXGroup;
 			children = (
-				D9393265247CEDC10068BD39 /* assets */,
-				D939326B247CEDC20068BD39 /* host.ios.bundle */,
-				D9393266247CEDC10068BD39 /* host.ios.bundle.map */,
-				D9393263247CEDC10068BD39 /* index.ios.bundle */,
-				D9393264247CEDC10068BD39 /* index.ios.bundle.LICENSE.txt */,
-				D9393268247CEDC20068BD39 /* index.ios.bundle.map */,
-				D9393267247CEDC10068BD39 /* index.manifest.json */,
-				D9393269247CEDC20068BD39 /* layouts */,
-				D939326A247CEDC20068BD39 /* pages */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -376,17 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D939326F247CEDC20068BD39 /* index.manifest.json in Resources */,
-				D9393272247CEDC20068BD39 /* host.ios.bundle in Resources */,
-				D9393271247CEDC20068BD39 /* pages in Resources */,
-				D939326D247CEDC20068BD39 /* index.ios.bundle.LICENSE.txt in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				D939326E247CEDC20068BD39 /* assets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				D0CF2D48C2BF467E9CD25AE0 /* antfill.ttf in Resources */,
-				D9393270247CEDC20068BD39 /* layouts in Resources */,
 				C86C18D8672C42B59708BC9E /* antoutline.ttf in Resources */,
-				D939326C247CEDC20068BD39 /* index.ios.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

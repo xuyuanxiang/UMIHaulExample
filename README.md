@@ -4,13 +4,6 @@
 
 [umi-react-native](https://github.com/xuyuanxiang/umi-react-native#readme)示例工程。
 
-在开发阶段使用[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)，不拆包，因为：
-
-1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
-2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
-
-在发布阶段使用[haul](https://github.com/callstack/haul)进行拆包。
-
 当前 master 分支最新代码集成了：
 
 - [DvaJS](https://dvajs.com/)
@@ -45,6 +38,7 @@
   - [1.0.0-集成 DvaJS](#100-%E9%9B%86%E6%88%90-dvajs)
   - [1.1.0-集成 @ant-design/react-native](#110-%E9%9B%86%E6%88%90-ant-designreact-native)
   - [1.2.0-集成 react-navigation](#120-%E9%9B%86%E6%88%90-react-navigation)
+  - [1.3.0-拆分多 bundle](#130-%E6%8B%86%E5%88%86%E5%A4%9A-bundle)
 
 ## 快速开始
 
@@ -123,6 +117,13 @@ yarn release:android
 ```
 
 ## 拆包
+
+在开发阶段使用[React Native CLI](https://github.com/react-native-community/cli/blob/master/docs/commands.md#commands)，不拆包，因为：
+
+1. [haul](https://github.com/callstack/haul)不支持：Fast Refresh, Live Reloading, Hot Replacement...
+2. [umi-react-native-multibundle](https://github.com/xuyuanxiang/umi-react-native/tree/master/packages/umi-react-native-multibundle)目前还不支持从远程 URL 下载 JS Bundle...
+
+在发布阶段使用[haul](https://github.com/callstack/haul)进行拆包。
 
 ### 拆包策略
 
@@ -234,4 +235,16 @@ yarn add umi-preset-react-navigation --dev && yarn add react-native-reanimated r
 
 查看变动内容：
 
-- [compare/1.1.0...1.2.0](https://github.com/xuyuanxiang/UMIHaulExample/compare/1.0.0...1.2.0)
+- [compare/1.1.0...1.2.0](https://github.com/xuyuanxiang/UMIHaulExample/compare/1.1.0...1.2.0)
+
+### 1.3.0-拆分多 bundle
+
+代码：[1.3.0](https://github.com/xuyuanxiang/UMIHaulExample/tree/1.3.0)。
+
+```npm
+yarn add umi-react-native-multibundle && cd ios && pod install && cd -
+```
+
+查看变动内容：
+
+- [compare/1.2.0...1.3.0](https://github.com/xuyuanxiang/UMIHaulExample/compare/1.2.0...1.3.0)
