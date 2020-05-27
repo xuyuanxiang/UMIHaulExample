@@ -94,7 +94,7 @@ yarn bundle
 
 将`/dist/ios`目录下所有文件和目录直接拖拽到 Xcode 中即可：
 
-![](https://cdn.xuyuanxiang.me/ios_multibundle_971631df.png)
+![](https://cdn.xuyuanxiang.me/ios_multibundle_c45ed443.png)
 
 _Xcode 会自动把这些文件和目录添加到右侧的`Copy Bundle Resources`中。_
 
