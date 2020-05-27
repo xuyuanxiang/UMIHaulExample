@@ -17,7 +17,8 @@
     "prerelease:android": "cross-env UMI_ENV=prod umi g rn",
     "release:android": "cd android && ./gradlew assembleRelease",
     "prerelease:ios": "cross-env UMI_ENV=prod umi g rn",
-    "release:ios": "cd ios && /usr/bin/xcodebuild -sdk iphoneos -scheme UMIHaulExample -workspace UMIHaulExample.xcworkspace -configuration Release -archivePath \"build/UMIHaulExample.xcarchive\" clean archive"
+    "release:ios": "cd ios && xcodebuild -sdk iphoneos -scheme UMIHaulExample -workspace UMIHaulExample.xcworkspace -configuration Release -archivePath build/UMIHaulExample.xcarchive clean archive",
+    "postrelease:ios": "xcodebuild -exportArchive -archivePath ./build/UMIHaulExample.xcarchive -exportOptionsPlist ./build/UMIHaulExample.xcarchive/Info.plist -exportPath ./build/UMIHaulExample.ipa"
   },
   "dependencies": {
     "@ant-design/react-native": "3.3.0",
