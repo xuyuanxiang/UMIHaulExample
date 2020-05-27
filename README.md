@@ -100,19 +100,23 @@ _Xcode 会自动把这些文件和目录添加到右侧的`Copy Bundle Resources
 
 #### 构建 iOS ipa
 
-执行下面命令，会先构建生成 iOS 的 JS bundle，然后再使用`xcodebuild`命令行工具构建安装包：
+执行下面命令，会使用`xcodebuild`命令行工具构建可供真机安装实测的 App:
 
 ```npm
 yarn release:ios
 ```
 
+输出路径：`ios/build/UMIHaulExample.ipa`。
+
 #### 构建 Android apk
 
-执行下面命令，会先构建生成 Android 的 JS bundle，然后再使用`gradle`命令行工具构建安装包：
+执行下面命令，会使用`gradle`命令行工具构建可供真机安装实测的 App：
 
 ```npm
 yarn release:android
 ```
+
+输出路径：`android/app/build/outputs/apk/release/app-release.apk`。
 
 ## 拆包
 
