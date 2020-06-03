@@ -86,7 +86,7 @@ yarn bundle
 
 ##### Android
 
-将`/dist`目录下的`/android`目录重名为`assets`并移动到下图位置：
+将`/dist/android`目录下所有文件和目录拷贝到下图的`assets`目录中：
 
 ![](https://cdn.xuyuanxiang.me/android_multibundle_ad44930f.png)
 
