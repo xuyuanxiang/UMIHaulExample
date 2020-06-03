@@ -23,13 +23,14 @@
   "dependencies": {
     "@ant-design/react-native": "3.3.0",
     "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "5.5.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-gesture-handler": "1.6.1",
-    "react-native-reanimated": "1.8.0",
-    "react-native-safe-area-context": "1.0.2",
-    "react-native-screens": "2.7.0",
-    "umi-react-native-multibundle": "^0.4.2"
+    "react-native-reanimated": "1.9.0",
+    "react-native-safe-area-context": "3.0.2",
+    "react-native-screens": "2.8.0",
+    "umi-react-native-multibundle": "^0.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -46,9 +47,9 @@
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.11.0",
     "umi": "^3.2.2",
-    "umi-plugin-antd-react-native": "^0.4.0",
-    "umi-preset-react-native": "^0.4.2",
-    "umi-preset-react-navigation": "^0.4.0"
+    "umi-plugin-antd-react-native": "^0.5.0",
+    "umi-preset-react-native": "^0.5.2",
+    "umi-preset-react-navigation": "^0.5.1"
   },
   "jest": {
     "preset": "react-native"
