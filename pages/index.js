@@ -1,7 +1,6 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
 import {Icon} from '@ant-design/react-native';
-import {connect} from 'umi';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../tabs/HomeScreen';
 import ProfileScreen from '../tabs/ProfileScreen';
@@ -37,18 +36,13 @@ function IndexPage() {
   );
 }
 
-const ConnectedIndexPage = connect(({foo, loading: {effects}}) => ({
-  greeting: foo.greeting,
-  loading: effects['foo/fetch'],
-}))(IndexPage);
-
-ConnectedIndexPage.title = '收钱吧';
-ConnectedIndexPage.headerTintColor = '#ffffff';
-ConnectedIndexPage.headerTitleStyle = {
+IndexPage.title = '首页';
+IndexPage.headerTintColor = '#ffffff';
+IndexPage.headerTitleStyle = {
   fontWeight: 'bold',
 };
-ConnectedIndexPage.headerStyle = {
+IndexPage.headerStyle = {
   backgroundColor: '#000000',
 };
 
-export default ConnectedIndexPage;
+export default IndexPage;

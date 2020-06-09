@@ -29,12 +29,5 @@ function FeedbackPage() {
 }
 
 FeedbackPage.title = '产品建议';
-FeedbackPage.headerTintColor = '#000000';
-FeedbackPage.headerTitleStyle = {
-  fontWeight: 'bold',
-};
-FeedbackPage.headerStyle = {
-  backgroundColor: '#ffffff',
-};
 
 export default FeedbackPage;

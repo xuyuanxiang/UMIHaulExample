@@ -1,9 +1,19 @@
-import React, {useLayoutEffect} from 'react';
-import {List, Modal, Button} from '@ant-design/react-native';
+import React, {useLayoutEffect, useState} from 'react';
+import {
+  List,
+  Switch,
+  Modal,
+  Button,
+  WhiteSpace,
+  WingBlank,
+} from '@ant-design/react-native';
 import {StatusBar} from 'react-native';
-import {Link} from 'umi';
+import {useDispatch} from 'umi';
 
 function SettingsPage({navigation}) {
+  const dispatch = useDispatch();
+  const [checked, setChecked] = useState(true);
+
   // 导航条右侧按钮点击事件
   function onHeaderRightPress() {
     Modal.alert('Title', 'alert content', [
@@ -38,21 +48,28 @@ function SettingsPage({navigation}) {
     <>
       <StatusBar barStyle="dark-content" />
       <List>
-        <Link to="/login" component={List.Item} arrow="horizontal">
-          登录
-        </Link>
+        <List.Item
+          onPress={() => setChecked(!checked)}
+          extra={<Switch checked={checked} onChange={setChecked} />}>
+          开启推送
+        </List.Item>
       </List>
+      <WhiteSpace size="lg" />
+      <WingBlank>
+        <Button
+          type="warning"
+          onPress={() =>
+            dispatch({
+              type: 'user/signOut',
+            })
+          }>
+          退出登录
+        </Button>
+      </WingBlank>
     </>
   );
 }
 
 SettingsPage.title = '设置';
-SettingsPage.headerTintColor = '#000000';
-SettingsPage.headerTitleStyle = {
-  fontWeight: 'bold',
-};
-SettingsPage.headerStyle = {
-  backgroundColor: '#ffffff',
-};
 
 export default SettingsPage;
